@@ -1,0 +1,32 @@
+﻿@model IEnumerable<FunnyNails.Models.Employee.CurWageMgmt>
+
+@{
+    ViewData["Title"] = "Current Wage";
+}
+
+<h2>Current Wage</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.CurWage)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurWage)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.CurWageID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.CurWageID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.CurWageID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

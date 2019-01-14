@@ -1,0 +1,35 @@
+﻿@model FunnyNails.Models.Employee.WorkMgmt
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkDay)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WorkDay)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkStart)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WorkStart)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkEnd)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WorkEnd)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.WorkID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

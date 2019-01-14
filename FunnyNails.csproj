@@ -1,0 +1,68 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>aspnet-FunnyNails-4A36C644-A89C-4C41-883E-E3022C203D74</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20180515022201_FunnyNails.cs" />
+    <Compile Remove="Data\Migrations\20180515022201_FunnyNails.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180515023016_FunnyNails.cs" />
+    <Compile Remove="Data\Migrations\20180515023016_FunnyNails.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180516015848_FunnyNails.cs" />
+    <Compile Remove="Data\Migrations\20180516015848_FunnyNails.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180516022409_FunnyNails.cs" />
+    <Compile Remove="Data\Migrations\20180516022409_FunnyNails.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180516022608_FunnyNails.cs" />
+    <Compile Remove="Data\Migrations\20180516022608_FunnyNails.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180516030624_FunnyNails.cs" />
+    <Compile Remove="Data\Migrations\20180516030624_FunnyNails.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180516035306_FunnyNails.cs" />
+    <Compile Remove="Data\Migrations\20180516035306_FunnyNails.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180516232530_FunnyNails.cs" />
+    <Compile Remove="Data\Migrations\20180516232530_FunnyNails.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180517024626_FunnyNails.cs" />
+    <Compile Remove="Data\Migrations\20180517024626_FunnyNails.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180517025956_FunnyNails.cs" />
+    <Compile Remove="Data\Migrations\20180517025956_FunnyNails.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180518050438_FunnyNails.cs" />
+    <Compile Remove="Data\Migrations\20180518050438_FunnyNails.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180519064003_FunnyNails.cs" />
+    <Compile Remove="Data\Migrations\20180519064003_FunnyNails.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180519064323_FunnyNails.cs" />
+    <Compile Remove="Data\Migrations\20180519064323_FunnyNails.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180519065133_FunnyNails.cs" />
+    <Compile Remove="Data\Migrations\20180519065133_FunnyNails.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180529021805_FunnyNails.cs" />
+    <Compile Remove="Data\Migrations\20180529021805_FunnyNails.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180529030145_FunnyN.cs" />
+    <Compile Remove="Data\Migrations\20180529030145_FunnyN.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180530014145_FNails.cs" />
+    <Compile Remove="Data\Migrations\20180530014145_FNails.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180531014937_FNails.cs" />
+    <Compile Remove="Data\Migrations\20180531014937_FNails.Designer.cs" />
+    <Compile Remove="Data\Migrations\20180601035419_FNails.cs" />
+    <Compile Remove="Data\Migrations\20180601035419_FNails.Designer.cs" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.TagHelpers" Version="2.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.2" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.1" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,23 @@
+﻿@model FunnyNails.Models.Employee.SalaryMgmt
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Salary)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Salary)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.SalaryID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

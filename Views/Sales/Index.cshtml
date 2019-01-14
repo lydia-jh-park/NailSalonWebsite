@@ -1,0 +1,82 @@
+﻿@model IEnumerable<FunnyNails.Models.Customer.SalesMgmt>
+
+@{
+    ViewData["Title"] = "Sales";
+}
+
+<h2>Sales</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<p>
+    <a asp-action="Sum">Sum of Sales</a>
+</p>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.PurchaseDate)</th>
+            <th>
+                @Html.DisplayNameFor(model => model.Item)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cost)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Discount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SalesRemark)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{ 
+            var iRec = 0;
+            decimal dTotalSales = 0.00M;
+            decimal dDiscount = 0.00M;
+            decimal dInterest = 0.00M;
+            }
+
+        @foreach (var item in Model)
+        {
+            iRec += 1;
+            dTotalSales += item.Cost;
+            dDiscount += item.Discount;
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PurchaseDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Item)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cost)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Discount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SalesRemark)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.SalesID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.SalesID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.SalesID">Delete</a>
+                </td>
+            </tr>
+        }
+        @{ 
+            dInterest = dTotalSales - dDiscount;
+        }
+    </tbody>
+</table>
+<div style="margin-top:200px"></div>
+
+<div>Total Records = @iRec</div>
+<div>Total Sales Volume = @dTotalSales</div>
+<div>Total Interest = @dInterest</div>
